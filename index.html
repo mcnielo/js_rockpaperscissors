@@ -5,8 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RockPaperScissors</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <div class="header__logo">
+            <h1>ROCK, PAPER, SCISSORS</h1>
+        </div>
+        <div class="button__container">
+            <img id="rock" src="images/rock-removebg-preview.png" alt="">
+            <img id="paper" src="images/paper-removebg-preview.png" alt="">
+            <img id="scissors" src="images/scissors-removebg-preview.png" alt=""> 
+        </div>
+        <div class="scores__container">
+            <p id="humanScore">Player: 0</p>
+            <p id="computerScore">Computer: 0</p>
+            <p id="status"></p>
+        </div>
+        <button id="new_game">NEW GAME</button>
+
+        <audio id="rock__sfx" src="audio/boulder_drop.ogg" type="audio/ogg"></audio>
+        <audio id="paper__sfx" src="audio/Paper Crumple Crumpling Scrunch Crunch Sfx.wav" type="audio/wav"></audio>
+        <audio id="scissors__sfx" src="audio/shears_01.ogg" type="audio/ogg"></audio>    
+        <audio id="button__sfx" src="audio/Menu Selection Click.wav" type="audio/wav"></audio>
+        <audio id="win__sfx" src="audio/applause.wav" type="audio/wav"></audio>
+        <audio id="lose__sfx" src="audio/vgdeathsound.wav" type="audio/wav"></audio>
+    </div>
 
 </body>
 </html>
